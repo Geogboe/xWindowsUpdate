@@ -33,6 +33,11 @@ function Remove-WuaService
     )
 
     $wuaServiceManager = Get-WuaServiceManager
+    $ServiceIDs = $wuaServiceManager.Services | Select-Object -ExpandProperty Serviceid
+    if ( $ServiceIDs -notcontains $ServiceId ) {
+        Write-Verbose "Service id: $ServiceId is not registered."
+        return $null
+    }
     $wuaServiceManager.RemoveService($ServiceId)
 }
 

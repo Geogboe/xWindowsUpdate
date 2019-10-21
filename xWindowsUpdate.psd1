@@ -1,6 +1,6 @@
 @{
 # Version number of this module.
-moduleVersion = '2.8.0.0'
+moduleVersion = '2.8.0.1'
 
 # ID used to uniquely identify this module
 GUID = 'a9cba250-ea73-4d82-b31b-7e58cc50ffd1'
@@ -63,7 +63,3 @@ PrivateData = @{
 
 } # End of PrivateData hashtable
 }
-
-
-
-
